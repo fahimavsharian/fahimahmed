@@ -25,9 +25,9 @@ const Container = styled.section`
     width: 100%;
     height: 100%;
     align-self: center;
-    justify-content: end;
-    writing-mode: vertical-lr;
-    transform: rotate(-180deg);
+    justify-content: start;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
   }
 `;
 

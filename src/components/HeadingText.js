@@ -9,16 +9,16 @@ const Heading = styled(motion.h1)`
   text-align: center;
 
   color: ${(props) => props.theme.colors.greenFive};
-  text-shadow: 1px 1px 1px ${(props) => props.theme.colors.greenTwo},
-    1px 2px 1px ${(props) => props.theme.colors.greenTwo},
-    1px 3px 1px ${(props) => props.theme.colors.greenTwo},
-    1px 4px 1px ${(props) => props.theme.colors.greenTwo},
-    1px 5px 1px ${(props) => props.theme.colors.greenTwo},
-    1px 6px 1px ${(props) => props.theme.colors.greenTwo},
-    1px 7px 1px ${(props) => props.theme.colors.greenTwo},
-    1px 8px 1px ${(props) => props.theme.colors.greenTwo},
-    1px 9px 1px ${(props) => props.theme.colors.greenTwo},
-    1px 10px 1px ${(props) => props.theme.colors.greenTwo};
+  text-shadow: 1px 1px 1px ${(props) => props.theme.colors.greenOne},
+    1px 2px 1px ${(props) => props.theme.colors.greenOne},
+    1px 3px 1px ${(props) => props.theme.colors.greenOne},
+    1px 4px 1px ${(props) => props.theme.colors.greenOne},
+    1px 5px 1px ${(props) => props.theme.colors.greenOne},
+    1px 6px 1px ${(props) => props.theme.colors.greenOne},
+    1px 7px 1px ${(props) => props.theme.colors.greenOne},
+    1px 8px 1px ${(props) => props.theme.colors.greenOne},
+    1px 9px 1px ${(props) => props.theme.colors.greenOne},
+    1px 10px 1px ${(props) => props.theme.colors.greenOne};
 `;
 
 const HeadingText = ({ text, delayAnimation }) => {

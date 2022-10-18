@@ -166,7 +166,7 @@ const Kyokai = () => {
           </div>
           <p>
             A website to learn and connect with the Kappa Sigma Fraternity at
-            UWO.
+            Western University.
           </p>
           <p>Built with vanilla HTML, CSS, and Javascript.</p>
         </Details>

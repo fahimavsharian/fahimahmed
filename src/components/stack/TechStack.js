@@ -46,6 +46,8 @@ const Container = styled.div`
     color: ${(props) => props.theme.colors.greyThree};
     font-size: 20px;
     background-color: ${(props) => props.theme.colors.greenFive};
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 14px 28px,
+      rgba(0, 0, 0, 0.4) 0px 10px 10px;
     width: 70%;
     border-radius: 10px;
     padding: 20px;
@@ -81,7 +83,7 @@ const TechStack = () => {
           transition={{ duration: 0.5, delay: 0.9 }}
         />
         <div>
-          <HeadingText text="Tech - Stack" delayAnimation={0.2} />
+          <HeadingText text="Tech Stack" delayAnimation={0.2} />
         </div>
 
         <motion.p

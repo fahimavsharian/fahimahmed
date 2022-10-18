@@ -17,17 +17,11 @@ const Wrapper = styled.div`
   position: relative;
 `;
 
-const SpaceHolder = styled.div`
-  /* background-color: orange; */
-  height: max(7.5vh, 60px);
-`;
-
 const Layout = ({ children }) => (
   <>
     <ThemeProvider theme={Theme}>
       <GlobalStyle />
       <Navbar />
-      <SpaceHolder id="intro" />
       <Wrapper>{children}</Wrapper>
       <Footer />
     </ThemeProvider>

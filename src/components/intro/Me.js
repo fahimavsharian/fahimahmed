@@ -36,7 +36,7 @@ const Column = styled(motion.div)`
   color: ${(props) => props.theme.colors.greyThree}; // for text
   position: relative;
   border-radius: 20px;
-  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 14px 28px, rgba(0, 0, 0, 0.8) 0px 10px 10px;
   display: flex;
   flex-direction: column;
   justify-self: flex-end;
@@ -72,7 +72,8 @@ const LinkSection = styled(motion.div)`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   z-index: 2;
   font-size: 25px;
 
@@ -140,7 +141,7 @@ const Me = () => {
             style={{
               width: "100%",
               height: "100%",
-              borderRadius: "12.5px",
+              borderRadius: "12.5px 12.5px 0px 0px",
               overflowX: "hidden",
               zIndex: "1",
             }}

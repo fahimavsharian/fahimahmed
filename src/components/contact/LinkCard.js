@@ -4,6 +4,7 @@ import React from "react";
 
 const Container = styled(motion.div)`
   background-color: ${(props) => props.theme.colors.greenFive};
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 14px 28px, rgba(0, 0, 0, 0.6) 0px 10px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;

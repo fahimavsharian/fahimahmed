@@ -11,19 +11,21 @@ const Container = styled(motion.div)`
   flex-direction: column;
   border-radius: 20px;
   background-color: ${(props) => props.theme.colors.greyTwo};
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 14px 28px, rgba(0, 0, 0, 0.2) 0px 10px 10px;
   align-items: center;
   justify-content: center;
 
   ${(props) => props.theme.sizes.tablet} {
     width: 400px;
     height: 300px;
-    margin: 10px 40px;
+    margin: 15px 40px;
     padding: 5px 5vw;
   }
 
   ${(props) => props.theme.sizes.mobile} {
     width: 80%;
     height: 300px;
+    margin: 15px, 0px;
   }
 
   hr {

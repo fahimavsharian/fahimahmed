@@ -40,7 +40,7 @@ const Box = styled(motion.div)`
   }
 
   ${(props) => props.theme.sizes.mobile} {
-    right: 7.5vw;
+    right: 20vw;
   }
 `;
 
@@ -54,7 +54,7 @@ const Work = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.9 }}
         />
-        <HeadingText text="Work - Project" />
+        <HeadingText text="Work & Project" />
         <Kyokai />
         <Lisn />
         <KSig />

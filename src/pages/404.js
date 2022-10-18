@@ -1,49 +1,49 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from "react";
+import { Link } from "gatsby";
+import { GiDinosaurRex } from "@react-icons/all-files/gi/GiDinosaurRex";
 
 const pageStyles = {
+  backgroundColor: "#ddead1",
   color: "#232129",
   padding: "96px",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
+};
 const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
-  maxWidth: 320,
-}
+  maxWidth: "70vw",
+};
 
 const paragraphStyles = {
-  marginBottom: 48,
-}
+  fontSize: 20,
+  marginBottom: 30,
+};
 const codeStyles = {
   color: "#8A6534",
   padding: 4,
   backgroundColor: "#FFF4DB",
   fontSize: "1.25rem",
   borderRadius: 4,
-}
+};
 
 const NotFoundPage = () => {
   return (
     <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
+      <h1 style={headingStyles}>
+        You know when you like start walking... and you walk a bit more, and
+        then all of a sudden you are in the middle of nowhere?
+      </h1>
       <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
+        Don't worry! The T-Rex is here to guide you home.
         <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
       </p>
+      <Link to="/">
+        <GiDinosaurRex size={40} />
+      </Link>
     </main>
-  )
-}
+  );
+};
 
-export default NotFoundPage
+export default NotFoundPage;
 
-export const Head = () => <title>Not found</title>
+export const Head = () => <title>Not found</title>;

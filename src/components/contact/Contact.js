@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 const Box = styled(motion.div)`
   border: 2px solid ${(props) => props.theme.colors.orange};
   width: 95%;
-  height: 500px;
+  height: 600px;
   top: -25px;
   left: 10vw;
   position: absolute;
@@ -56,28 +56,28 @@ const Contact = () => {
         <Row>
           <LinkCard
             text="Github"
-            delayAnimation={0.6}
+            delayAnimation={0.2}
             icon={<ReactIcon icon="github" />}
             link="https://github.com/fahimavsharian"
           ></LinkCard>
 
           <LinkCard
             text="E-Mail"
-            delayAnimation={0.2}
+            delayAnimation={0.4}
             icon={<ReactIcon icon="mail" />}
             link="mailto:fahimavsharian@gmail.com?subject=Let's%20work%20together!"
           ></LinkCard>
 
           <LinkCard
             text="LinkedIn"
-            delayAnimation={0.8}
+            delayAnimation={0.6}
             icon={<ReactIcon icon="linkedin" />}
             link=""
           ></LinkCard>
 
           <LinkCard
             text="Resume"
-            delayAnimation={0.4}
+            delayAnimation={0.8}
             icon={<ReactIcon icon="resume" />}
             link=""
           ></LinkCard>
