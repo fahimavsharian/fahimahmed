@@ -1,0 +1,153 @@
+import styled from "styled-components";
+import { motion } from "framer-motion";
+import React from "react";
+import HeadingText from "../HeadingText";
+import Card from "./Card";
+
+const Wrapper = styled.div`
+  /* background-color: purple; */
+  height: 100%;
+  width: 100%;
+  position: relative;
+`;
+
+const Box = styled(motion.div)`
+  border: 2px solid ${(props) => props.theme.colors.orange};
+  width: 700px;
+  height: 500px;
+  position: absolute;
+  overflow: hidden;
+  z-index: -5;
+
+  ${(props) => props.theme.sizes.tablet} {
+    width: 500px;
+    height: max(100vh, 1100px);
+  }
+
+  ${(props) => props.theme.sizes.mobile} {
+    width: 130%;
+    height: max(130vh, 1200px);
+  }
+`;
+
+const Container = styled.div`
+  /* border: 2px solid orange; */
+  /* background-color: aliceblue; */
+  width: min(100%, 1200px);
+  min-height: 80vh;
+  max-height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    color: ${(props) => props.theme.colors.greyThree};
+    font-size: 20px;
+    background-color: ${(props) => props.theme.colors.greenFive};
+    width: 70%;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 30px;
+    text-align: center;
+
+    ${(props) => props.theme.sizes.tablet} {
+      width: 75%;
+    }
+
+    ${(props) => props.theme.sizes.mobile} {
+      width: 85%;
+    }
+  }
+`;
+
+const Row = styled.div`
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; //might not be neccesary
+`;
+
+const TechStack = () => {
+  return (
+    <Wrapper>
+      <Container>
+        <Box
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1, rotate: 25 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.9 }}
+        />
+        <div>
+          <HeadingText text="Tech - Stack" delayAnimation={0.2} />
+        </div>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
+          I implement fresh, responsive front-end designs and pair it with
+          efficient, scaleable back-end architectures.
+        </motion.p>
+
+        <div>
+          <Row>
+            <Card
+              heading={frontHeading}
+              list={frontList}
+              delayAnimation={0.4}
+            />
+            <Card heading={backHeading} list={backList} delayAnimation={0.6} />
+            <Card
+              heading={otherHeading}
+              list={otherList}
+              delayAnimation={0.8}
+            />
+          </Row>
+        </div>
+      </Container>
+    </Wrapper>
+  );
+};
+
+const frontHeading = "Front End";
+const frontList = [
+  "React",
+  "Gatsby",
+  "Styled Components",
+  "Framer Motion",
+  "Flutter",
+  "Javascript",
+  "HTML",
+  "CSS",
+];
+
+const backHeading = "Back End";
+const backList = [
+  "NodeJS",
+  "Express",
+  "Firebase",
+  "Dart",
+  "Cloud Functions",
+  "RESTful & GraphQL",
+  "FireStore",
+  "mongoDB",
+];
+
+const otherHeading = "Others";
+const otherList = [
+  "Data Structures",
+  "State Management",
+  "Algorithms",
+  "Scrum / Agile",
+  "Unit Testing",
+  "Git",
+  "CI/CD",
+  "UI/UX",
+];
+
+export default TechStack;

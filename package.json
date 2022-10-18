@@ -1,0 +1,36 @@
+{
+  "name": "fahim",
+  "version": "1.0.0",
+  "private": true,
+  "description": "My Portfolio Site",
+  "author": "Fahim Ahmed",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
+    "babel-plugin-styled-components": "^2.0.7",
+    "framer-motion": "^7.3.6",
+    "gatsby": "^4.23.0",
+    "gatsby-plugin-anchor-links": "^1.2.1",
+    "gatsby-plugin-image": "^2.23.0",
+    "gatsby-plugin-manifest": "^4.24.0",
+    "gatsby-plugin-sharp": "^4.23.0",
+    "gatsby-plugin-styled-components": "^5.23.0",
+    "gatsby-source-filesystem": "^4.23.0",
+    "gatsby-transformer-sharp": "^4.23.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "gatsby-plugin-root-import": "^2.0.8"
+  }
+}
