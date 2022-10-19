@@ -134,7 +134,7 @@ const backList = [
   "Express",
   "Firebase",
   "Dart",
-  "Cloud Functions",
+  "Serverless Functions",
   "RESTful & GraphQL",
   "FireStore",
   "mongoDB",
