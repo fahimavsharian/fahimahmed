@@ -18,7 +18,8 @@ module.exports = {
       },
       resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: "./src/images/finalLogo.png",
+        icon: "src/images/icon.png",
+        background_color: "#282828",
       },
       resolve: "gatsby-source-filesystem",
       options: {

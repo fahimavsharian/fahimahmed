@@ -87,10 +87,10 @@ const TechStack = () => {
         </div>
 
         <motion.p
-          initial={{ opacity: 0, y: -15 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          transition={{ duration: 0.9, delay: 0.4 }}
         >
           I implement fresh, responsive front-end designs and pair it with
           efficient, scaleable back-end architectures.
