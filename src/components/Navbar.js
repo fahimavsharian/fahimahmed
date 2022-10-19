@@ -29,24 +29,13 @@ const Wrapper = styled.nav`
   -webkit-touch-callout: none;
 
   div {
-    color: ${(props) => props.theme.colors.greenOne};
-    padding-left: 10px;
-    font-size: 15px;
-    cursor: pointer;
+    padding-left: 5px;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
 
     &:hover {
       text-decoration: line-through;
-      color: ${(props) => props.theme.colors.greyOne};
-    }
-
-    ${(props) => props.theme.sizes.tablet} {
-      font-size: 15px;
-    }
-
-    ${(props) => props.theme.sizes.mobile} {
-      font-size: 14px;
     }
   }
 
@@ -55,21 +44,24 @@ const Wrapper = styled.nav`
     display: flex;
     justify-content: flex-end;
     -webkit-justify-content: flex-end;
+
+    li {
+      list-style: none;
+
+      &:hover {
+        text-decoration: line-through;
+      }
+    }
   }
 `;
 
-const ListItem = styled.li`
-  list-style: none;
+const StyledLink = styled(AnchorLink)`
+  color: ${(props) => props.theme.colors.greenOne};
+  text-align: center;
   padding: 0px 20px;
   cursor: pointer;
-`;
-
-const StyledLink = styled(AnchorLink)`
-  text-decoration: none;
-  color: ${(props) => props.theme.colors.greenOne};
 
   &:hover {
-    text-decoration: line-through;
     color: ${(props) => props.theme.colors.greyOne};
   }
 
@@ -113,19 +105,26 @@ const Nav = () => {
         <div>
           <StyledLink to="#intro" title="Top of the Site">
             01000110
+            <br />
+            01000001
           </StyledLink>
-          <StyledLink to="#intro">01000001</StyledLink>
         </div>
         <ul>
-          <StyledLink to="#stack" title="Teck Stack Section">
-            <ListItem>about</ListItem>
-          </StyledLink>
-          <StyledLink to="#work" title="Work Experience Section">
-            <ListItem>work</ListItem>
-          </StyledLink>
-          <StyledLink to="#contact" title="Link Section">
-            <ListItem>contact</ListItem>
-          </StyledLink>
+          <li>
+            <StyledLink to="#stack" title="Teck Stack Section">
+              about
+            </StyledLink>
+          </li>
+          <li>
+            <StyledLink to="#work" title="Work Experience Section">
+              work
+            </StyledLink>
+          </li>
+          <li>
+            <StyledLink to="#contact" title="Link Section">
+              contact
+            </StyledLink>
+          </li>
         </ul>
       </Wrapper>
     </Background>

@@ -44,6 +44,14 @@ body {
   font-family: 'Satoshi', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
 }
 
+::selection {
+  background:  ${(props) =>
+    props.theme.colors.orange}; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background:  ${(props) => props.theme.colors.orange}; /* Gecko Browsers */
+}
+
 h1 {
   font-family: 'SatoshiBlack','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
   font-size: 80px;
