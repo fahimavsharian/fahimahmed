@@ -155,7 +155,7 @@ const Kyokai = () => {
             <h3>Kyokai</h3>
             <motion.a
               whileHover={{ scale: 1.3, transition: 0.2 }}
-              href="https://www.kyokai.club/routing"
+              href="https://www.kyokai.club/"
               target="_blank"
               rel="noopener noreferrer"
             >
