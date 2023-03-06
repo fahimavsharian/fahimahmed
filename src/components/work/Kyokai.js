@@ -165,8 +165,8 @@ const Kyokai = () => {
 
           <p>A portal to the upcoming Kyokai NFT project.</p>
           <p>
-            A website built with React, Styled Components, Framer Motion, and
-            Sanity as the headless CMS.
+            A website built with React, Styled Components, Framer Motion, Sanity
+            as the headless CMS, and Supabase as the database.
           </p>
         </Details>
       </Section>
