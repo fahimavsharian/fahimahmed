@@ -82,12 +82,12 @@ const Contact = () => {
             link="resume.pdf"
           ></LinkCard>
 
-          <LinkCard
+          {/* <LinkCard
             text="Wallpaper"
             delayAnimation={1.0}
             icon={<ReactIcon icon="wallpaper" />}
             link=""
-          ></LinkCard>
+          ></LinkCard> */}
         </Row>
       </Container>
     </Wrapper>
