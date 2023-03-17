@@ -51,7 +51,7 @@ const Container = styled.div`
     width: 70%;
     border-radius: 10px;
     padding: 20px;
-    margin: 20px 30px;
+    margin: 40px 30px;
     text-align: center;
 
     ${(props) => props.theme.sizes.tablet} {
