@@ -48,7 +48,7 @@ const Box = styled(motion.div)`
 const ImageHolder = styled(motion.div)`
   /* border: yellow 1px solid; */
   width: 65vw;
-  top: -250px;
+  top: -225px;
   left: 0px;
   position: absolute;
   z-index: -3;

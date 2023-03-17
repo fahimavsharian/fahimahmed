@@ -45,9 +45,10 @@ const Row = styled.div`
 
 const ImageHolder = styled(motion.div)`
   /* border: yellow 1px solid; */
-  width: 65vw;
-  top: -250px;
-  left: 0px;
+  width: 75vw;
+  top: -225px;
+  right: -100px;
+  transform: rotateY(180deg);
   position: absolute;
   z-index: -3;
 `;
