@@ -47,6 +47,7 @@ const Box = styled(motion.div)`
 const Work = () => {
   return (
     <Wrapper id="work">
+      <HeadingText text="Work & Project" />
       <Container>
         <Box
           initial={{ opacity: 0, x: -50 }}
@@ -54,7 +55,7 @@ const Work = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.9 }}
         />
-        <HeadingText text="Work & Project" />
+
         <Kyokai />
         <Lisn />
         <KSig />

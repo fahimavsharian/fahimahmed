@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import HeadingText from "../HeadingText";
 import Card from "./Card";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Wrapper = styled.div`
   /* background-color: purple; */
@@ -34,8 +35,8 @@ const Container = styled.div`
   /* border: 2px solid orange; */
   /* background-color: aliceblue; */
   width: min(100%, 1200px);
-  min-height: 80vh;
   max-height: 100%;
+  padding: 40px 0px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -51,7 +52,7 @@ const Container = styled.div`
     width: 70%;
     border-radius: 10px;
     padding: 20px;
-    margin: 40px 30px;
+    margin: 20px 30px;
     text-align: center;
 
     ${(props) => props.theme.sizes.tablet} {
@@ -72,9 +73,30 @@ const Row = styled.div`
   justify-content: space-evenly; //might not be neccesary
 `;
 
+const ImageHolder = styled(motion.div)`
+  /* border: yellow 1px solid; */
+  width: 65vw;
+  top: -225px;
+  right: 0px;
+  transform: rotateY(180deg);
+  position: absolute;
+  z-index: -3;
+`;
+
 const TechStack = () => {
   return (
     <Wrapper>
+      <HeadingText text="Tech Stack" delayAnimation={0.2} />
+      <ImageHolder>
+        <StaticImage
+          src="../images/leaf1.png"
+          alt="A leaf"
+          placeholder="blurred"
+          transformOptions={{ grayscale: "true" }}
+          // width={800}
+          // height={200}
+        />
+      </ImageHolder>
       <Container>
         <Box
           initial={{ opacity: 0, scale: 0.8 }}
@@ -82,10 +104,6 @@ const TechStack = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.9 }}
         />
-        <div>
-          <HeadingText text="Tech Stack" delayAnimation={0.2} />
-        </div>
-
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -95,7 +113,6 @@ const TechStack = () => {
           I implement fresh, responsive front-end designs and pair it with
           efficient, scaleable back-end architectures.
         </motion.p>
-
         <div>
           <Row>
             <Card

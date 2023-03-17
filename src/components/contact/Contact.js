@@ -45,6 +45,7 @@ const Row = styled.div`
 const Contact = () => {
   return (
     <Wrapper>
+      <HeadingText text="Contact" delayAnimation={0.2} />
       <Container>
         <Box
           initial={{ opacity: 0, scale: 0.8, x: 50, rotate: 25 }}
@@ -52,7 +53,6 @@ const Contact = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.9 }}
         />
-        <HeadingText text="Contact" delayAnimation={0.2} />
         <Row>
           <LinkCard
             text="Github"

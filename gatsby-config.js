@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Fahim Ahmed`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://www.fahimcodez.com`,
   },
   plugins: [
     "gatsby-plugin-styled-components",
@@ -13,12 +13,11 @@ module.exports = {
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {
-        // offset: -100,
         duration: 250,
       },
       resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: "src/images/icon.png",
+        icon: "src/images/gatsby-icon.png",
         background_color: "#282828",
       },
       resolve: "gatsby-source-filesystem",

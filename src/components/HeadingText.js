@@ -23,14 +23,16 @@ const Heading = styled(motion.h1)`
 
 const HeadingText = ({ text, delayAnimation }) => {
   return (
-    <Heading
-      initial={{ opacity: 0, scale: 0.8 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true }}
-      transition={{ type: "spring", stiffness: 100, delay: delayAnimation }}
-    >
-      {text}
-    </Heading>
+    <>
+      <Heading
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ type: "spring", stiffness: 100, delay: delayAnimation }}
+      >
+        {text}
+      </Heading>
+    </>
   );
 };
 
