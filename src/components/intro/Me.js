@@ -119,7 +119,7 @@ const Me = () => {
 
             <motion.a
               whileHover={{ scale: 1.3, transition: 0.2 }}
-              href="mailto:hello@fahimcodez.com?subject=Let's%20work%20together!"
+              href="mailto:hi@fahimcodez.com?subject=Let's%20work%20together!"
               rel="noopener noreferrer"
             >
               <ReactIcon icon="mail" />
@@ -127,7 +127,7 @@ const Me = () => {
 
             <motion.a
               whileHover={{ scale: 1.3, transition: 0.2 }}
-              href="https://www.google.com"
+              href="https://www.linkedin.com/in/fahimcodez/"
               target="_blank"
               rel="noopener noreferrer"
             >
