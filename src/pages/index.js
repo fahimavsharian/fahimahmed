@@ -7,14 +7,14 @@ import Work from "../components/work/Work";
 import Contact from "../components/contact/Contact";
 
 const SpaceHolder = styled.div`
-  height: 200px;
+  height: 250px;
 
   ${(props) => props.theme.sizes.tablet} {
-    height: 150px;
+    height: 200px;
   }
 
   ${(props) => props.theme.sizes.mobile} {
-    height: 125px;
+    height: 150px;
   }
 `;
 
