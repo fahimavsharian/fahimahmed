@@ -87,9 +87,14 @@ const TechStack = () => {
   return (
     <Wrapper>
       <HeadingText text="Tech Stack" delayAnimation={0.2} />
-      <ImageHolder>
+      <ImageHolder
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.4, delay: 0.2 }}
+      >
         <StaticImage
-          src="../images/leaf1.png"
+          src="../../images/leaf1.png"
           alt="A leaf"
           placeholder="blurred"
           transformOptions={{ grayscale: "true" }}

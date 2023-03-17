@@ -55,7 +55,7 @@ const LinkCard = ({ text, delayAnimation, icon, link }) => {
   console.log(link);
   return (
     <a
-      style={{ "text-decoration": "none" }}
+      style={{ textDecoration: "none" }}
       href={link}
       target="_blank"
       rel="noopener noreferrer"

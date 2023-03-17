@@ -4,6 +4,7 @@ import React from "react";
 import HeadingText from "../HeadingText";
 import LinkCard from "./LinkCard";
 import ReactIcon from "../ReactIcon";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Wrapper = styled.div`
   /* background-color: purple; */
@@ -42,10 +43,32 @@ const Row = styled.div`
   justify-content: center;
 `;
 
+const ImageHolder = styled(motion.div)`
+  /* border: yellow 1px solid; */
+  width: 65vw;
+  top: -250px;
+  left: 0px;
+  position: absolute;
+  z-index: -3;
+`;
+
 const Contact = () => {
   return (
     <Wrapper>
       <HeadingText text="Contact" delayAnimation={0.2} />
+      <ImageHolder
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.4, delay: 0.2 }}
+      >
+        <StaticImage
+          src="../../images/leaf2.png"
+          alt="A leaf"
+          placeholder="blurred"
+          transformOptions={{ grayscale: "true" }}
+        />
+      </ImageHolder>
       <Container>
         <Box
           initial={{ opacity: 0, scale: 0.8, x: 50, rotate: 25 }}

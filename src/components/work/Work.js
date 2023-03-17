@@ -5,6 +5,7 @@ import HeadingText from "../HeadingText";
 import Kyokai from "./Kyokai";
 import Lisn from "./Lisn";
 import KSig from "./KSig";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Wrapper = styled.div`
   /* background-color: purple; */
@@ -44,10 +45,32 @@ const Box = styled(motion.div)`
   }
 `;
 
+const ImageHolder = styled(motion.div)`
+  /* border: yellow 1px solid; */
+  width: 65vw;
+  top: -250px;
+  left: 0px;
+  position: absolute;
+  z-index: -3;
+`;
+
 const Work = () => {
   return (
     <Wrapper id="work">
       <HeadingText text="Work & Project" />
+      <ImageHolder
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.4, delay: 0.2 }}
+      >
+        <StaticImage
+          src="../../images/leaf3.png"
+          alt="A leaf"
+          placeholder="blurred"
+          transformOptions={{ grayscale: "true" }}
+        />
+      </ImageHolder>
       <Container>
         <Box
           initial={{ opacity: 0, x: -50 }}
