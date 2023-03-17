@@ -93,8 +93,6 @@ const TechStack = () => {
           alt="A leaf"
           placeholder="blurred"
           transformOptions={{ grayscale: "true" }}
-          // width={800}
-          // height={200}
         />
       </ImageHolder>
       <Container>
