@@ -45,12 +45,25 @@ const Row = styled.div`
 
 const ImageHolder = styled(motion.div)`
   /* border: yellow 1px solid; */
-  width: 75vw;
-  top: -225px;
-  right: -100px;
+  width: 70vw;
+  max-width: 1000px;
+  top: -300px;
+  right: -110px;
   transform: rotateY(180deg);
   position: absolute;
   z-index: -3;
+
+  ${(props) => props.theme.sizes.tablet} {
+    width: 75vw;
+    top: -225px;
+    right: -10vw;
+  }
+
+  ${(props) => props.theme.sizes.mobile} {
+    width: 90vw;
+    top: -175px;
+    right: -10vw;
+  }
 `;
 
 const Contact = () => {

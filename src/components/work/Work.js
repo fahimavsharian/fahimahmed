@@ -33,7 +33,7 @@ const Box = styled(motion.div)`
   top: 250px;
   right: 20vw;
   position: absolute;
-  z-index: -3;
+  z-index: -5;
   overflow: hidden;
 
   ${(props) => props.theme.sizes.tablet} {
@@ -47,11 +47,22 @@ const Box = styled(motion.div)`
 
 const ImageHolder = styled(motion.div)`
   /* border: yellow 1px solid; */
-  width: 65vw;
+  width: 60vw;
+  max-width: 800px;
   top: -225px;
   left: 0px;
   position: absolute;
   z-index: -3;
+
+  ${(props) => props.theme.sizes.tablet} {
+    width: 75vw;
+    top: -200px;
+  }
+
+  ${(props) => props.theme.sizes.mobile} {
+    width: 75vw;
+    top: -150px;
+  }
 `;
 
 const Work = () => {

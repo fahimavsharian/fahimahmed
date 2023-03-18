@@ -9,13 +9,13 @@ import Contact from "../components/contact/Contact";
 const SpaceHolder = styled.div`
   height: 250px;
 
-  ${(props) => props.theme.sizes.tablet} {
+  /* ${(props) => props.theme.sizes.tablet} {
     height: 200px;
   }
 
   ${(props) => props.theme.sizes.mobile} {
     height: 150px;
-  }
+  } */
 `;
 
 const IndexPage = () => {

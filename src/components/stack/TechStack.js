@@ -75,12 +75,23 @@ const Row = styled.div`
 
 const ImageHolder = styled(motion.div)`
   /* border: yellow 1px solid; */
-  width: 65vw;
-  top: -225px;
+  width: 60vw;
+  max-width: 800px;
+  top: -255px;
   right: 0px;
   transform: rotateY(180deg);
   position: absolute;
   z-index: -3;
+
+  ${(props) => props.theme.sizes.tablet} {
+    width: 75vw;
+    top: -225px;
+  }
+
+  ${(props) => props.theme.sizes.mobile} {
+    width: 80vw;
+    top: -150px;
+  }
 `;
 
 const TechStack = () => {
