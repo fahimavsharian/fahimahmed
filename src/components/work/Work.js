@@ -61,6 +61,7 @@ const ImageHolder = styled(motion.div)`
 
   ${(props) => props.theme.sizes.mobile} {
     width: 75vw;
+    min-width: 400px;
     top: -150px;
   }
 `;
