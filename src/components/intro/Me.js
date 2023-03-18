@@ -77,7 +77,7 @@ const LinkSection = styled(motion.div)`
 
   ${(props) => props.theme.sizes.mobile} {
     width: 50%;
-    left: 27%;
+    left: 26%;
     font-size: 22px;
   }
 

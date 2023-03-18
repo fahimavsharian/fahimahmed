@@ -26,7 +26,7 @@ import Me from "./Me";
 // `;
 
 const Wrapper = styled.div`
-  border: 2px solid grey;
+  /* border: 2px solid grey; */
   padding-top: max(9vh, 80px);
   width: min(100%, 1200px);
   height: max(90vh, 750px);
