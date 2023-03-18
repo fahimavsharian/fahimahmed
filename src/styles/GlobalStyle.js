@@ -37,6 +37,29 @@ const GlobalStyle = createGlobalStyle`
       src: url(/fonts/Satoshi-Black.woff) format("woff");
     }
 
+      /* Scroll bar stylings */
+    ::-webkit-scrollbar {
+        width: 7.5px;
+        height: 7.5px;
+      }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: ${(props) => props.theme.colors.greyTwo};
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      width: 5px;
+      background: ${(props) => props.theme.colors.greyThree};
+      border-radius: 3px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: ${(props) => props.theme.colors.greenFour}
+    }
+
   }
 
 body {
