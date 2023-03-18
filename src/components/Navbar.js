@@ -28,9 +28,12 @@ const Wrapper = styled.nav`
   user-select: none;
   -webkit-touch-callout: none;
 
+  font-size: 16px;
+  ${(props) => props.theme.sizes.mobile} {
+    font-size: 14px;
+  }
+
   div {
-    padding-left: 5px;
-    font-size: 16px;
     display: flex;
     flex-direction: column;
 
@@ -56,10 +59,15 @@ const Wrapper = styled.nav`
 `;
 
 const StyledLink = styled(AnchorLink)`
+  /* background-color: aliceblue; */
   color: ${(props) => props.theme.colors.greenOne};
   text-align: center;
   padding: 0px 20px;
   cursor: pointer;
+
+  ${(props) => props.theme.sizes.mobile} {
+    padding: 0px 10px;
+  }
 
   &:hover {
     color: ${(props) => props.theme.colors.greyOne};
