@@ -23,7 +23,7 @@ const Container = styled.section`
 
   ${(props) => props.theme.sizes.mobile} {
     width: 100%;
-    height: max(80vh, 500px);
+    height: max(70vh, 500px);
     justify-content: center;
     align-items: center;
   }
