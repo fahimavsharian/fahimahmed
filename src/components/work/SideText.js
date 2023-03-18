@@ -11,6 +11,10 @@ const Text = styled(motion.h1)`
   h1:nth-child(even) {
     color: ${(props) => props.theme.colors.greyThree};
   }
+
+  ${(props) => props.theme.sizes.mobile} {
+    display: none;
+  }
 `;
 
 function SideText({ text, isLeft, animationDelay }) {

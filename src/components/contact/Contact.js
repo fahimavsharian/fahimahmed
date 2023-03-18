@@ -117,7 +117,7 @@ const Contact = () => {
             text="Resume"
             delayAnimation={0.8}
             icon={<ReactIcon icon="resume" />}
-            link="resume.pdf"
+            link="files/resume.pdf"
           ></LinkCard>
 
           {/* <LinkCard

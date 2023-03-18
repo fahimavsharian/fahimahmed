@@ -14,18 +14,6 @@ const Row = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
-
-  h1 {
-    color: ${(props) => props.theme.colors.greyTwo};
-    padding: 0px 50px;
-    writing-mode: vertical-lr;
-    transform: rotate(-180deg);
-    z-index: -1;
-  }
-
-  h1:nth-child(even) {
-    color: ${(props) => props.theme.colors.greyThree};
-  }
 `;
 
 const Section = styled.section`
