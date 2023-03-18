@@ -22,12 +22,7 @@ const Container = styled.section`
   }
 
   ${(props) => props.theme.sizes.mobile} {
-    width: 100%;
-    height: 100%;
-    align-self: center;
-    justify-content: start;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
+    display: none;
   }
 `;
 

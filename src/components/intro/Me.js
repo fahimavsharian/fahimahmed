@@ -23,11 +23,9 @@ const Container = styled.section`
 
   ${(props) => props.theme.sizes.mobile} {
     width: 100%;
-    height: max(80vh, 550px);
-    position: absolute;
-    padding-right: 5vw;
+    height: max(80vh, 500px);
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
   }
 `;
 
