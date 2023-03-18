@@ -14,6 +14,17 @@ const Row = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
+
+  h1 {
+    color: ${(props) => props.theme.colors.greyTwo};
+    padding: 0px 50px;
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    z-index: -1;
+  }
+  h1:nth-child(even) {
+    color: ${(props) => props.theme.colors.greyThree};
+  }
 `;
 
 const Section = styled.section`
@@ -109,8 +120,18 @@ const Kyokai = () => {
 
   return (
     <Row>
-      <SideText text="K-Sig" isLeft={true} animationDelay={0.6} />
-      <SideText text="K-Sig" isLeft={true} animationDelay={0.3} />
+      <SideText
+        text="K-Sig"
+        isLeft={true}
+        animationDelay={0.6}
+        isFirst={true}
+      />
+      <SideText
+        text="K-Sig"
+        isLeft={true}
+        animationDelay={0.3}
+        isFirst={false}
+      />
       <Section>
         <div ref={ref}>
           {isFirst === id && (
