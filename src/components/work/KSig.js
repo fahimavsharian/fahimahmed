@@ -21,6 +21,10 @@ const Row = styled.div`
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
     z-index: -1;
+
+    ${(props) => props.theme.sizes.mobile} {
+      display: none;
+    }
   }
   h1:nth-child(even) {
     color: ${(props) => props.theme.colors.greyThree};
