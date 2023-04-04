@@ -17,20 +17,20 @@
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
     "babel-plugin-styled-components": "^2.0.7",
-    "framer-motion": "^7.3.6",
-    "gatsby": "^4.23.0",
+    "framer-motion": "^7.10.3",
+    "gatsby": "^4.25.6",
     "gatsby-plugin-anchor-links": "^1.2.1",
-    "gatsby-plugin-image": "^2.23.0",
-    "gatsby-plugin-manifest": "^4.24.0",
-    "gatsby-plugin-sharp": "^4.23.0",
-    "gatsby-plugin-styled-components": "^5.23.0",
-    "gatsby-source-filesystem": "^4.23.0",
-    "gatsby-transformer-sharp": "^4.23.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "styled-components": "^5.3.5"
+    "gatsby-plugin-image": "^2.25.0",
+    "gatsby-plugin-manifest": "^4.25.0",
+    "gatsby-plugin-sharp": "^4.25.1",
+    "gatsby-plugin-styled-components": "^5.25.0",
+    "gatsby-source-filesystem": "^4.25.0",
+    "gatsby-transformer-sharp": "^4.25.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.9"
   },
   "devDependencies": {
-    "gatsby-plugin-root-import": "^2.0.8"
+    "gatsby-plugin-root-import": "^2.0.9"
   }
 }
