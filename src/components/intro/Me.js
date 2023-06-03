@@ -108,7 +108,7 @@ const Me = () => {
           >
             <motion.a
               whileHover={{ scale: 1.3, transition: 0.2 }}
-              href="https://github.com/fahimavsharian"
+              href="https://github.com/fahimcodez"
               target="_blank"
               rel="noopener noreferrer"
             >
