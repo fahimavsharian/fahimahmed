@@ -96,7 +96,7 @@ const Contact = () => {
             text="Github"
             delayAnimation={0.2}
             icon={<ReactIcon icon="github" />}
-            link="https://github.com/fahimavsharian"
+            link="https://github.com/fahimcodez"
           ></LinkCard>
 
           <LinkCard
